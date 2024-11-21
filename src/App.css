@@ -1,0 +1,120 @@
+/* Geral */
+body {
+  background-color: #555353;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Estilo para as tarefas */
+.task {
+  display: flex; /* Usando flexbox para alinhar os botões e tarefa na mesma linha */
+  justify-content: space-between; /* Distribui os itens de maneira uniforme */
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+input, textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 16px;
+}
+
+/* Botões com cores específicas */
+.btn-add {
+  background-color: #0e76bb;
+}
+
+.btn-mark {
+  background-color: #278809;
+}
+
+.btn-del {
+  background-color: #b90d0dfd;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .App {
+    padding: 15px;
+  }
+
+  input, textarea, button {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .App {
+    padding: 10px;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  input, textarea {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
